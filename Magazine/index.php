@@ -239,7 +239,7 @@
 
 <div class="half-panel" style="overflow: hidden; background-color: #000;" name="layout">
     <div class="panel-overlay kenBurns" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/toastmaster.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-      <div class="panel-overlay"></div>
+      <div class="cover-overlay"></div>
 	<div class="middle">
 	    <div class="main-content center-fade">
 	        <h1 class="center">Parallax Half Height Cover</h1>

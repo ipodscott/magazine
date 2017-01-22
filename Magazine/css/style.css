@@ -214,6 +214,16 @@ img{
     z-index:0;
 }
 
+.cover-overlay{
+	position:absolute;
+    width:calc(100% + 60px);
+    height:100%;
+    top:0;
+    left:-30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:0;
+}
+
 .panel-overlay.dark{
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -504,7 +514,7 @@ img{
 .audio-box{
     display: block;
     position:relative;
-    height:50px;
+    height: 60px;
     width: calc(100% - 40px);
     max-width:800px;
     background-color:#000;
@@ -561,10 +571,12 @@ img{
 }
 
 .audioplayer{
-    margin:5px 0 0 0;
+	top: 5px;
+    margin:0 auto; 
+    display: block;
+    position: relative;
     font-size:16px;
     width:calc(100% - 10px);
-    float:right;
 }
 
 .side-buttons{
@@ -901,6 +913,7 @@ img{
   z-index:999;
   top:0;
   left:0;
+  cursor:zoom-out;
 }
 
 .img-box {
