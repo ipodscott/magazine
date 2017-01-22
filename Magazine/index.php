@@ -88,6 +88,11 @@
 			     <div class="simple-link pop-image" imgUrl="<?php echo get_template_directory_uri(); ?>/images/airplane.jpg">View Image <i class="fa fa-picture-o" aria-hidden="true"></i></div>
 			 </div>
 	    </div>
+	    
+	    <div class="cap-header-title">
+		    <h1 class="center-fade">Big Title</h1>
+		</div>
+	    
     </div>
 </div>
 
@@ -102,6 +107,11 @@
 			     <div class="simple-link pop-image" imgUrl="<?php echo get_template_directory_uri(); ?>/images/new_horizons.jpg">View Image <i class="fa fa-picture-o" aria-hidden="true"></i></div>
 			 </div>
 	    </div>
+	    
+	    <div class="cap-header-title">
+		    <h1 class="center-fade">Big Title</h1>
+		</div>
+	    
     </div>
 </div>
 
@@ -111,7 +121,7 @@
 	<div class="middle fade-in">
 	    <div class="caption right shadow">
 		    <div class="cap-copy center-fade">
-			    <span class="cap-title">For Pavillion</span>
+			    <span class="cap-title">The Ford Pavillion</span>
 			    Ford Motor Building. Entrance.
 			     <div class="simple-link pop-image" imgUrl="<?php echo get_template_directory_uri(); ?>/images/ford_lg.jpg">View Image <i class="fa fa-picture-o" aria-hidden="true"></i></div>
 			 </div>
@@ -142,7 +152,7 @@
 
 <p>Praesent faucibus justo eu mi varius, a iaculis sapien elementum. Suspendisse ut porttitor orci. Nam vitae tincidunt sem. Sed eget elementum velit. Ut sit amet rhoncus leo. Donec lobortis dictum risus, et rhoncus dui posuere sed. Maecenas id fringilla lectus. Nullam vitae leo auctor, luctus mi a, tempor elit. Cras porttitor at velit ac pharetra. Sed lacinia sollicitudin pharetra. Nullam fringilla libero in libero viverra commodo. Fusce eget porta magna. Nulla porttitor, urna eu posuere cursus, ligula augue facilisis augue, id aliquet felis dolor id nunc. Phasellus quis ultricies libero, ac mollis nibh. In interdum commodo sollicitudin.</p>
                     
-                    <div class="play-audio" audioUrl="http://www.dieselpunkindustries.com/radio_shows/dimension_x/dimension_x_51-06-17_37_a_pebble_in_the_sky.mp3">Play Audio One<i class="fa fa-volume-up" aria-hidden="true"></i></div>
+                    <div class="play-audio" audioUrl="https://www.wpwebos.com/audio/vox-pop-39-09-23.mp3">Play Audio One<i class="fa fa-volume-up" aria-hidden="true"></i></div>
 
 
 

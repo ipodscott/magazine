@@ -7,7 +7,8 @@
 	 sr.reveal('.vid-bg-box', { reset: true, duration: 2000, delay: 0, opacity: 0, scale: 1, easing: 'ease-in-out', viewOffset: { top: 0, right: 0, bottom: 0, left: 0 }}); 
 	 sr.reveal('.cover-fade', { reset: true, duration: 1000, delay: 1000, opacity: 0, scale: 0.90, origin: 'center', distance: '0px', easing: 'ease-in-out', viewOffset: { top: 60, right: 0, bottom: 60, left: 0 }}); 
 	 sr.reveal('.kenBurns', { reset: true, duration: 10000, delay: 0, opacity: 0.2, scale: 1.2, origin: 'center', distance: '0px', easing: 'ease-in-out', viewOffset: { top: 120, right: 0, bottom: 120, left: 0 }});
-	 sr.reveal('.center-fade', { reset: true, duration: 500, delay: 0, opacity: 0, scale: 1, easing: 'linear', viewOffset: { top: 60, right: 0, bottom: 60, left: 0 }}); 
+	 sr.reveal('.center-fade', { reset: true, duration: 1000, delay: 0, opacity: 0, scale: 1, easing: 'linear', viewOffset: { top: 60, right: 0, bottom: 60, left: 0 }}); 
+ 
 
 $(".big-black").delay(0).fadeOut(1000);
 $(".all, .media-layers").fadeIn(0);	 
@@ -114,7 +115,7 @@ $(".all, .media-layers").fadeIn(0);
         $('.youTube').attr("src", $(this).attr("vidUrl"));
     });
     
-    $( ".close-media, .img-holder img, .img-box" ).click(function() {
+    $( ".close-media, .img-holder img" ).click(function() {
         $('.youTube').attr("src", $(this).attr("vidUrl"));
         $('.media-overlay, .tube-frame, .close-media, .video-box, .img-holder img').fadeOut(500, function(){
             $('.img-pop-box').fadeOut(500);
