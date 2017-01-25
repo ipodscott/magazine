@@ -31,16 +31,16 @@ $(".all, .media-layers").fadeIn(0);
     /*Menu Controls*/
     $( ".menu-btn" ).click(function() {
         $(".menu").addClass('show-menu');
-        $('body').addClass('fade');
-        $('.all').addClass('fade');
+        /*$('body').addClass('fade');*/
+        /*$('.all').addClass('fade');*/
         $(".menu-layer").fadeIn(500);
          
     });
     
     $( ".menu ul li, .menu ul li a, .close-menu, .menu-layer" ).click(function() {
         $(".menu").removeClass('show-menu');
-        $('body').removeClass('fade');
-        $('.all').removeClass('fade');
+        /*$('body').removeClass('fade');*/
+        /*$('.all').removeClass('fade');*/
         $(".menu-layer").delay(250).fadeOut(500);
     });
     
@@ -87,7 +87,7 @@ $(".all, .media-layers").fadeIn(0);
     $( ".vid-link, .big-play" ).click(function() {
         $('.myVideo').attr("src", $(this).attr("vidUrl"));
         $('.media-overlay, .close-media, .video-box').fadeIn(500);
-        $('body').addClass('fade');
+        /*$('body').addClass('fade');*/
         $(".footer-audio").removeClass('show-audio');
         $(".side-buttons").removeClass('show-side');
         document.getElementById('myAudio').pause();
@@ -101,7 +101,7 @@ $(".all, .media-layers").fadeIn(0);
            $('.media-overlay, .close-media, .img-pop-box').fadeIn(500, function(){
                $('.img-holder img').fadeIn(500);
            });
-            $('body').addClass('fade');
+            /*$('body').addClass('fade');*/
      });
      
      
@@ -120,7 +120,7 @@ $(".all, .media-layers").fadeIn(0);
     
     $( ".tube-link" ).click(function() {
         $('.media-overlay, .close-media, .tube-frame').fadeIn(500);
-        $('body').addClass('fade');
+        /*$('body').addClass('fade');*/
         $(".footer-audio").removeClass('show-audio');
         $(".side-buttons").removeClass('show-side');
         document.getElementById('myAudio').pause();
@@ -133,7 +133,7 @@ $(".all, .media-layers").fadeIn(0);
             $('.img-pop-box').fadeOut(500);
         });
         document.getElementById('myVideo').pause();
-        $('body').removeClass('fade');
+        /*$('body').removeClass('fade');*/
     });
     
     
@@ -198,11 +198,11 @@ $('.parallax').parallax({
                 $('.img-pop-box').fadeOut(500);
             });
             document.getElementById('myVideo').pause();
-            $('body').removeClass('fade');
+            /*$('body').removeClass('fade');*/
             
             $(".menu").removeClass('show-menu');
-            $('body').removeClass('fade');
-            $('.all').removeClass('fade');
+            /*$('body').removeClass('fade');*/
+            /*$('.all').removeClass('fade');*/
             $(".menu-layer").delay(250).fadeOut(500);
 
             $('.btt-footer').fadeIn(500);
@@ -213,7 +213,7 @@ $('.parallax').parallax({
         if (e.keyCode == 39)
         {
             $(".menu").addClass('show-menu');
-            $('body').addClass('fade');
+            /*$('body').addClass('fade');*/
             $('.all').addClass('fade');
             $(".menu-layer").fadeIn(500);
         
@@ -224,7 +224,7 @@ $('.parallax').parallax({
         if (e.keyCode == 37)
         {
             $(".menu").removeClass('show-menu');
-            $('body').removeClass('fade');
+            /*$('body').removeClass('fade');*/
             $('.all').removeClass('fade');
             $(".menu-layer").delay(250).fadeOut(500);
         

@@ -108,23 +108,6 @@
 
 
 
-<div class="half-panel-caption light parallax" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/airplane_crop.jpg);" name="parallax">
-	 <div class="panel-overlay"></div>
-	<div class="middle fade-in">
-	    <div class="caption right shadow">
-		    <div class="cap-copy center-fade">
-			    <span class="cap-title">Lockheed 14 Airplane</span>
-			    Fair President Grover Whalen (center) stands by as workers prep Hughes's Lockheed 14, christened New York World's Fair 1939.
-			     <div class="simple-link pop-image" imgUrl="<?php echo get_template_directory_uri(); ?>/images/airplane.jpg">View Image <i class="fa fa-picture-o" aria-hidden="true"></i></div>
-			 </div>
-	    </div>
-	    
-	    <div class="cap-header-title">
-		    <h1 class="center-fade">Big Title</h1>
-		</div>
-	    
-    </div>
-</div>
 
     
 <div class="half-panel-caption light parallax" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/new_horizons_crop.jpg);" name="parallax">
@@ -146,31 +129,6 @@
 </div>
 
 
-<div class="half-panel-caption light parallax" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/ford_crop.jpg);" name="parallax">
-	 <div class="panel-overlay"></div>
-	<div class="middle fade-in">
-	    <div class="caption right shadow">
-		    <div class="cap-copy center-fade">
-			    <span class="cap-title">The Ford Pavillion</span>
-			    Ford Motor Building. Entrance.
-			     <div class="simple-link pop-image" imgUrl="<?php echo get_template_directory_uri(); ?>/images/ford_lg.jpg">View Image <i class="fa fa-picture-o" aria-hidden="true"></i></div>
-			 </div>
-	    </div>
-    </div>
-</div>
-
-<div class="half-panel-caption light parallax" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/flyer.jpg);" name="parallax">
-	 <div class="panel-overlay"></div>
-	<div class="middle fade-in">
-	    <div class="caption shadow">
-		    <div class="cap-copy center-fade">
-			    <span class="cap-title">Wanted! 10,000 guest homes</span>
-			    Poster calling for guest homes to be available during the New York World's Fair.
-			     <div class="simple-link pop-image" imgUrl="<?php echo get_template_directory_uri(); ?>/images/flyer_lg.jpg">View Image <i class="fa fa-picture-o" aria-hidden="true"></i></div>
-			 </div>
-	    </div>
-    </div>
-</div>  
     
 <div class="full-panel" name="audio">
 		<div class="middle">
