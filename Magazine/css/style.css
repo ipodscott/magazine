@@ -432,21 +432,16 @@ img{
 	transition: all 1s;
 	display: table;
 }
+.show-gall-cap{
+	opacity: 1 !important;
+}
 
 .gall-img .info .text{
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.gall-img:hover .info{
-	-webkit-transition-delay: 0.5s; /* Safari */
-    transition-delay: 0.5s;
-	opacity: 1;
-}
 
-.gall-img:hover img{
-	opacity: 1;
-}
 
 .gallery h2{
 	text-align: left;

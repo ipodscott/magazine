@@ -103,6 +103,18 @@ $(".all, .media-layers").fadeIn(0);
            });
             $('body').addClass('fade');
      });
+     
+     
+      /* Image Pop Gallery*/
+      
+      $( ".gall-img" ).mouseover(function() {
+	  	$(this).find( "img" ).addClass('show-gall-cap');
+	  	$(this).find( ".info" ).delay(1000).addClass('show-gall-cap');
+     	});
+    
+    $( ".gall-img" ).mouseout(function() {
+	  	$(this).find( ".info" ).removeClass('show-gall-cap');
+     	});
     
     /*iframe Controls*/
     
