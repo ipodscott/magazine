@@ -313,6 +313,7 @@ img{
 	background-color: rgba(0, 0, 0, 0.5);
 	text-align: center;
 	transition:all 0.5s;
+	color: #efefef;
 }
 
 .half-panel-caption .caption.right{
@@ -333,7 +334,6 @@ img{
     margin: 0 0 1.5em 0;
     font-family: 'Lato',sans-serif;
 	text-align: left;
-	
 	}
 	
 .half-panel-caption .caption .cap-copy .cap-title{
@@ -364,6 +364,7 @@ img{
 .cap-header-title h1{
 	display: table-cell;
 	vertical-align: middle;
+	color: #efefef;
 	font-size: calc(80% + 2.5vw) !important;
 }
 
@@ -388,7 +389,69 @@ img{
 	max-width: 1200px;
 	width: calc(100% - 60px);
 	padding: 0;
+	text-align: center;
 }
+
+.img-gallery{
+	padding: 60px 0 60px 0;
+}
+
+.gall-img{
+	position: relative;
+	display: inline-block;
+	max-height: 250px;
+	width: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666;
+	display: inline-block;
+	margin: 20px;
+	box-shadow: 0 0 10px 0 #000000;
+    -webkit-box-shadow: 0 0 10px 0 #000000;
+    transition: all 0.5s;
+}
+
+
+.gallery img{
+	opacity: 0.5;
+	transition: all 0.5s;
+}
+
+.gall-img .info{
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-transform: uppercase;
+	padding: 5px 0 5px 0;
+	letter-spacing: 0.25em;
+	font-weight: bold;
+	font-size: 10px;
+	opacity: 0;
+	height: 60px;
+	transition: all 1s;
+	display: table;
+}
+
+.gall-img .info .text{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.gall-img:hover .info{
+	-webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
+	opacity: 1;
+}
+
+.gall-img:hover img{
+	opacity: 1;
+}
+
+.gallery h2{
+	text-align: left;
+}
+
 
 .cover-title-image{
     display:block;
@@ -891,7 +954,7 @@ img{
 
 .pop-image{
     transition:all 0.5s;
-    cursor:zoom-in;
+    cursor: url(../images/plus_cursor.png), auto;
     opacity: 0.8;
 }
 
@@ -913,7 +976,7 @@ img{
   z-index:999;
   top:0;
   left:0;
-  cursor:zoom-out;
+  cursor: url(../images/minus_cursor.png), auto;
 }
 
 .img-box {
@@ -935,7 +998,7 @@ img{
     max-height:90vh;
     max-width:90vw;
     display:none;
-    cursor:zoom-out;
+    cursor: url(../images/minus_cursor.png), auto;
 }
 
 

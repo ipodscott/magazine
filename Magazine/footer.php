@@ -58,7 +58,7 @@
 	</div>
 	
 	<div class="btt-footer">
-	   <a href="#video-bg"><img class="shadow" src="<?php echo get_template_directory_uri(); ?>/images/top_link.svg"></a>
+	   <a href="#top"><img class="shadow" src="<?php echo get_template_directory_uri(); ?>/images/top_link.svg"></a>
 	</div>
 </div>
 

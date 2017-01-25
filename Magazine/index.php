@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<body>
+<body name="top">
 <div class="all dark">
 	
 
@@ -15,27 +15,29 @@
 		    
 			<div class="middle">
 			    <div class="main-content cover-fade">
-				    
-				    <?php while(has_sub_field("page_content")): ?>
-					<?php if(get_row_layout() == "logo"):?>
-				    
-			        		<img class="cover-title-image" src="<?php the_sub_field("logo_image"); ?>">
-			        	
-			        	<?php elseif(get_row_layout() == "link"):?>
-						
-							<div class="full break center"><a href="<?php the_sub_field("cover_link"); ?>"><btn><?php the_sub_field("button_title"); ?></btn></a></div>
-						
-						<?php elseif(get_row_layout() == "large_header"):?>
+				    <div class="img-gallery">
+					    
+					    <?php while(has_sub_field("page_content")): ?>
+						<?php if(get_row_layout() == "logo"):?>
+					    
+				        		<img class="cover-title-image" src="<?php the_sub_field("logo_image"); ?>">
+				        	
+				        	<?php elseif(get_row_layout() == "link"):?>
 							
-							<h1 class="center" style="color:#fff;"><?php the_sub_field("large_header"); ?></h1>
-			        
-			        <?php endif; ?>
-					<?php endwhile; ?>
-			        
+								<div class="full break center"><a href="<?php the_sub_field("cover_link"); ?>"><btn><?php the_sub_field("button_title"); ?></btn></a></div>
+							
+							<?php elseif(get_row_layout() == "large_header"):?>
+								
+								<h1 class="center" style="color:#fff;"><?php the_sub_field("large_header"); ?></h1>
+				        
+				        <?php endif; ?>
+						<?php endwhile; ?>
+						
+						
+				    </div>
 		        </div>
-		        
-		        	
 		    </div>
+		    
 		</div>
 
 		
@@ -60,8 +62,8 @@
 							  <div class="full"><?php the_sub_field("main_content"); ?></div>
 							  
 						<?php elseif(get_row_layout() == "large_link"):?>
-						<div class="full break center"><a href="<?php the_sub_field('url');?>"><btn><?php the_sub_field('text');?></btn></a></div>
-			        
+						
+			        <div class="full break center"><a href="<?php the_sub_field('url');?>"><btn><?php the_sub_field('text');?></btn></a></div>
 			        <?php endif; ?>
 					<?php endwhile; ?>
 	
@@ -71,11 +73,39 @@
 			</div>
 			
 		
-		<?php elseif(get_row_layout() == "full"):?>		
+		<?php elseif(get_row_layout() == "full"):?>
+		
+		<?php elseif(get_row_layout() == "gallery"):?>
+		
+			<div class="full-panel" name="<?php the_sub_field("section_title");?>">
+				<div class="middle">
+					<div class="main-content gallery">
+					<h2><?php the_sub_field('gallery_name');?></h2>
+						
+					<?php if(get_sub_field('gallery')): ?>
+					<?php while(has_sub_field('gallery')): ?>
+						
+						<div class="gall-img pop-image shadow" imgUrl="<?php the_sub_field('full_image');?>" >
+							<img src="<?php the_sub_field('thumbnail');?>"/>
+							<div class="info">
+								<div class="text"><?php the_sub_field('image_info');?></div>
+							</div>
+						</div>
+						
+			        <?php endwhile; ?>
+			        <?php endif; ?>
+						<?php if((get_sub_field('link_title'))): ?>
+								<div class="full break center"><a href="<?php the_sub_field('link_url');?>"><btn><?php the_sub_field('link_title');?></btn></a></div>
+						<?php endif;?>
+					</div>
+				</div>
+			</div>
+		
 	
 
 <?php endif; ?>
 <?php endwhile; ?>
+
 
 
 <div class="half-panel-caption light parallax" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/airplane_crop.jpg);" name="parallax">
