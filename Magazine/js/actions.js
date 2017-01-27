@@ -50,13 +50,20 @@ $(".all, .media-layers").fadeIn(0);
     
     /*Audio Controls*/
     
-    $( ".play-audio" ).click(function() {
-        $('.myAudio').attr("src", $(this).attr("audioUrl"));
+    $('.play-audio').on('click', '.play-snd', function(){
+        $('.myAudio').attr("src", $(this).parent().attr("audioUrl"));
         $(".footer-audio").addClass('show-audio');
         document.getElementById('myAudio').play();
         $('.audioplayer').addClass("audioplayer-playing");
+        $('.play-audio').removeClass("playing");
+        $(this).parent().delay(500).addClass("playing");
         $(".side-buttons").removeClass('show-side');
         $('.btt-footer').fadeOut(500);
+        $('.now-playing').show();
+        $('.audio-switch').addClass('play-snd');
+        $('.audio-switch').removeClass("stop-snd");
+        $(this).delay(500).removeClass('play-snd');
+        $(this).delay(500).addClass('stop-snd');
     });
     
     $( ".audio-box .hide-audio" ).click(function() {
@@ -76,9 +83,22 @@ $(".all, .media-layers").fadeIn(0);
         $(".side-buttons").removeClass('show-side');
         document.getElementById('myAudio').pause();
         $('.btt-footer').fadeIn(500);
+        $('.play-audio').removeClass("playing");
+        $('.audio-switch').removeClass("stop-snd");
+        $(".audio-switch").addClass('play-snd'); 
     });
     
-    $(function(){
+    
+    $('.play-audio').on('click', '.stop-snd', function(){
+	    $(".footer-audio").removeClass('show-audio');
+	    $(".side-buttons").removeClass('show-side');
+        document.getElementById('myAudio').pause();
+        $('.play-audio').removeClass("playing");
+        $('.audio-switch').addClass('play-snd');
+        $('.audio-switch').removeClass("stop-snd");
+	 });
+    
+       $(function(){
         $('.myAudio').audioPlayer();
     });
     
@@ -104,18 +124,7 @@ $(".all, .media-layers").fadeIn(0);
             /*$('body').addClass('fade');*/
      });
      
-     
-      /* Image Pop Gallery*/
-      
-      $( ".gall-img" ).mouseover(function() {
-	  	$(this).find( "img" ).addClass('show-gall-cap');
-	  	$(this).find( ".info" ).delay(1000).addClass('show-gall-cap');
-     	});
-    
-    $( ".gall-img" ).mouseout(function() {
-	  	$(this).find( ".info" ).removeClass('show-gall-cap');
-     	});
-    
+ 
     /*iframe Controls*/
     
     $( ".tube-link" ).click(function() {
