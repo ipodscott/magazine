@@ -14,8 +14,7 @@ function prefix_add_footer_styles() {
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/style.css',true,'1.1','all');
     wp_enqueue_style( 'audioplayer', '//dieselpunkindustries.com/libs/audioplayer/css/audioplayer.css',true,'1.1','all');
 	wp_enqueue_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css',true,'1.1','all');
-	wp_enqueue_style( 'googlefonts', '//fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:300,400,700',true,'1.1','all');
-	
+	wp_enqueue_style( 'googlefonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Teko:300,400,500,600,700|Voltaire',true,'1.1','all');
 };
 add_action( 'get_footer', 'prefix_add_footer_styles' );
 

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+	<?php get_header(); ?>
 <body name="top">
 <div class="all dark">
 	
@@ -51,12 +51,12 @@
 			        	<?php elseif(get_row_layout() == "narrow_left_wide_right"):?>
 						
 						
-						<div class="full-panel" name="iframe">
+						<div class="full-panel" name="<?php the_sub_field("section_title"); ?>">
 							<div class="middle">
 								<div class="main-content">
 								    
 								    
-								    <div class="quarter">
+								    <div class="thirty">
 									    
 									    <?php while(has_sub_field("column_one")): ?>
 										
@@ -65,18 +65,18 @@
 								        	<div class="img-cap"><?php the_sub_field("caption"); ?></div> 
 								        	
 								        <?php elseif(get_row_layout() == "audio_link"):?>
-								        <div class="play-audio" audioUrl="<?php the_sub_field("audio_url"); ?>">
-									        <?php the_sub_field("audio_title"); ?><i class="fa fa-volume-up" aria-hidden="true"></i>
-									        <div class="audio-switch play-snd"></div>
-									    </div>
-								        								        
+								       	<div class="round-play-audio">
+									       	<span><?php the_sub_field("audio_title"); ?></span>
+									       	<i class="fa fa-volume-up cap-play-snd play-snd" aria-hidden="true"  audioUrl="<?php the_sub_field("audio_url");?>"></i>
+									       	<i class="fa fa-volume-up cap-play-snd stop-snd" aria-hidden="true"></i>
+									    </div>								        								        
 								        <?php endif; ?>
 										<?php endwhile; ?>
 								       
 								    </div>
 								    
 								    
-									<div class="three-quarters">
+									<div class="seventy">
 										
 										<?php while(has_sub_field("right_column")): ?>
 										<?php if(get_row_layout() == "h2"):?>
@@ -90,13 +90,23 @@
 											<?php elseif(get_row_layout() == "large_header"):?>
 												
 												<h1 class="center" style="color:#fff;"><?php the_sub_field("large_header"); ?></h1>
+												
+											<?php elseif(get_row_layout() == "big_link"):?>
+												
+												<div class="center"><a href="<?php the_sub_field("url"); ?>"><btn class="big-link"><?php the_sub_field("link_title"); ?></btn></a></div>
 								        
 								        <?php endif; ?>
 										<?php endwhile; ?>
 								       
 									</div>
+									
+									<?php if((get_sub_field('link_title'))): ?>
+										<div class="center"><a href="<?php the_sub_field("url"); ?>"><btn class="big-link"><?php the_sub_field("link_title"); ?></btn></a></div>
+									<?php endif;?>
+									
+									
 								</div>
-								<div class="full break center"><a href="#layout"><btn>Basic Layout</btn></a></div>
+								
 								
 							</div>
 					</div>
@@ -136,7 +146,7 @@
 							  
 						<?php elseif(get_row_layout() == "large_link"):?>
 						
-			        <div class="full break center"><a href="<?php the_sub_field('url');?>"><btn><?php the_sub_field('text');?></btn></a></div>
+			        
 			        <?php endif; ?>
 					<?php endwhile; ?>
 	
