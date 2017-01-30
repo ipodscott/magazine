@@ -52,7 +52,7 @@
 	        <li><a href="#iframe">Iframe Sample</a></li>
 	        <li><a href="#layout">Basic Layout</a></li>
 	        <li><a href="#big-media">Big Media Link</a></li>
-	        <li><a class="page-link" href="test-page/">Test Page</a></li>
+	        <li><a class="page-link" href="futurama/">Futurama</a></li>
 	    </ul>
 	    <img class="close-menu" src="<?php echo get_template_directory_uri(); ?>/images/thin_close.svg">
 	</div>

@@ -8,11 +8,16 @@
 	 sr.reveal('.vid-bg-box', { reset: true, duration: 2000, delay: 0, opacity: 0, scale: 1, easing: 'ease-in-out', viewOffset: { top: 0, right: 0, bottom: 0, left: 0 }}); 
 	 sr.reveal('.cover-fade', { reset: true, duration: 1000, delay: 1000, opacity: 0, scale: 0.90, origin: 'center', distance: '0px', easing: 'ease-in-out', viewOffset: { top: 60, right: 0, bottom: 60, left: 0 }}); 
 	 sr.reveal('.kenBurns', { reset: true, duration: 10000, delay: 0, opacity: 0.5, scale: 1.2, origin: 'center', distance: '0px', easing: 'ease-in-out', viewOffset: { top: 120, right: 0, bottom: 120, left: 0 }});
-	 sr.reveal('.center-fade', { reset: true, duration: 2000, delay: 0, opacity: 0.5, scale: 1.1, easing: 'ease-in-out', viewOffset: { top: 60, right: 0, bottom: 60, left: 0 }}); 
+	 sr.reveal('.center-fade', { reset: true, duration: 2000, delay: 0, opacity: 0, scale: 1.1, easing: 'ease-in-out', viewOffset: { top: 60, right: 0, bottom: 60, left: 0 }}); 
  
 
-$(".big-black").delay(0).fadeOut(1000);
-$(".all, .media-layers").fadeIn(0);	 
+$(".big-black").delay(500).fadeOut(1000);
+$(".all, .media-layers").delay(500).fadeIn(1000, function(){
+	sr.reveal('.fade-in', { reset: true, duration: 1000, delay: 500, opacity: 0, origin: 'center', distance: '0', scale: 0, easing: 'ease', viewOffset: { top: 0, right: 0, bottom: 0, left: 0 }});
+	sr.reveal('.center-fade', { reset: true, duration: 2000, delay: 0, opacity: 0, scale: 1.1, easing: 'ease-in-out', viewOffset: { top: 60, right: 0, bottom: 60, left: 0 }});
+});
+
+$( ".all, .media-layers" ).animate({ opacity: 1}, 1000, function(){}); 
 
     $('a[href*="#"]:not([href="#"])').click(function() {
     	  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
